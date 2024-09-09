@@ -7,7 +7,7 @@ import joblib
 from flask import Flask, request, render_template
 
 # Load and preprocess the dataset
-df = pd.read_csv("C:\\Users\\DELL\\OneDrive\\Desktop\\Mini2\\heart_disease_modelcsv.csv")
+df = pd.read_csv("heart_disease.csv")
 
 # Rename the target column
 df.rename(columns={"Heart Disease": "target"}, inplace=True)
